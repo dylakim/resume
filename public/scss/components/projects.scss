@@ -1,0 +1,81 @@
+#projects {
+    margin: 0 0 calcRems(75px);
+    
+    @include bp(desktop) {
+        margin: 0 auto calcRems(85px);
+        width: calcRems(920px);
+    }
+
+    .description {
+        background: $colorPurpleDk;
+        margin: 0 auto calcRems(40px);
+        padding: calcRems(45px) calcRems(80px);
+
+        @include bp(desktop) {
+            padding: calcRems(50px) calcRems(200px);
+        }
+
+        h1, p {
+            color: $colorWhite;
+        }
+    }
+
+    .project {
+        border: 1px solid $colorPurpleDk;
+        border-radius: calcRems(15px);
+        box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.25);
+        box-sizing: border-box;
+        margin: 0 calcRems(40px) calcRems(40px);
+        padding: calcRems(40px);
+        position: relative;
+        
+        @include bp(desktop) {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 calcRems(40px);
+        }
+
+        > div {
+            &:first-of-type {
+                @include bp(desktop) {
+                    text-align: left;
+                    width: 48%;
+                }
+            }
+
+        }
+
+        h2 {
+            font-size: calcRems(22px);
+
+            @include bp(desktop) {
+                font-size: calcRems(24px);
+                padding-bottom: calcRems(30px);
+            }
+        }
+
+        &__preview {
+            margin-bottom: calcRems(15px);
+
+            @include bp(desktop) {
+                top: calcRems(40px);
+                position: absolute;
+                right: calcRems(40px);
+            }
+        }
+        
+        p {
+            font-size: calcRems(16px);
+            font-weight: $lightWeight;
+
+            @include bp(desktop) {
+                font-size: calcRems(18px);
+            }
+
+            &:last-of-type {
+                padding-bottom: calcRems(40px);
+            }
+        }
+    }
+}

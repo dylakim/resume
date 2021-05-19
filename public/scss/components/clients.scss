@@ -1,0 +1,30 @@
+#clients {
+    padding: 0 calcRems(80px);
+    margin-bottom: calcRems(75px);
+
+    @include bp(desktop) {
+        margin: 0 auto calcRems(85px);
+        max-width: calcRems(920px);
+    }
+
+    p {
+        @include bp(desktop) {
+            padding: 0 calcRems(200px) 0;
+        }
+    }
+
+    .clients__logos {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        img {
+            display: block;
+            
+            @include bp(desktop) {
+                width: 30%;
+            }
+        }
+    }
+}
