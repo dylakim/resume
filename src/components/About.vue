@@ -19,7 +19,6 @@
                     <li>HTML</li>
                     <li>CSS/SCSS</li>
                     <li>Vue.js</li>
-                    <li>Git</li>
                 </ul>
             </section>
 
@@ -27,10 +26,11 @@
                 <font-awesome-icon :icon="faTools" />
                 <h2>Tools</h2>
                 <ul>
+                    <li>Git</li>
+                    <li>Bitbucket</li>
+                    <li>JIRA</li>
                     <li>VSCode</li>
                     <li>Photoshop</li>
-                    <li>JIRA</li>
-                    <li>Bitbucket</li>
                 </ul>
             </section>
 
