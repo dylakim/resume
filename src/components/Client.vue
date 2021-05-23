@@ -1,7 +1,7 @@
 <template>
     <div class="client">
         <img
-            :src="`/images/${imageFileName}`"
+            :src="`/images/clients/${imageFileName}`"
             :alt="altText"
         >
     </div>
