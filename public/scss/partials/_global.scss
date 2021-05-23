@@ -56,6 +56,7 @@ header {
 }
 
 h1 {
+    color: $colorPurpleDk;
     font-family: $robotSlabFont;
     font-size: calcRems(36px);
     padding: 0 0 calcRems(30px);
@@ -80,6 +81,7 @@ h2 {
 
 p { 
     font-size: calcRems(20px);
+    font-weight: 300;
     padding: 0 0 calcRems(20px);
     
     @include bp(desktop) {

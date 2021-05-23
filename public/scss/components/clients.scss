@@ -1,4 +1,4 @@
-#clients {
+.clients {
     padding: 0 calcRems(80px);
     margin-bottom: calcRems(75px);
 
@@ -13,17 +13,35 @@
         }
     }
 
-    .clients__logos {
+    &__logos {
         align-items: center;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
+        margin: calcRems(20px) 0;
+        
+        @include bp(desktop) {
+            justify-content: space-around;
+            margin: calcRems(40px) 0;
+        }
 
-        img {
-            display: block;
+        .client {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            min-height: calcRems(120px);
+            width: 40%;
             
             @include bp(desktop) {
                 width: 30%;
+            }
+
+            img {
+                width: 85%;
+
+                @include bp(desktop) {
+                    width: 65%;
+                }
             }
         }
     }

@@ -8,9 +8,10 @@
         </div>
 
         <Project
-            project-url="test"
-            image="test"
-            imageAlt="test image"
+            project-url="https://www.chobanirewards.com/"
+            imageFileName="chobani_rewards2021.jpg"
+            imageAlt="Chobani Rewards website screenshot"
+            projectName="Choabni Rewards"
         >
             <template v-slot:headline>Chobani Rewards</template>
             <template v-slot:body>
@@ -20,9 +21,10 @@
         </Project>
 
         <Project
-            project-url="test"
-            image="test"
-            imageAlt="test image"
+            project-url="https://sonyrewards.promo.eprize.com/theperfectpair/"
+            imageFileName="sonyrewards_theperfectpair.jpg"
+            imageAlt="Sony Rewards: The Perfect Pair website screenshot"
+            projectName="The Perfect Pair"
         >
             <template v-slot:headline>Sony Rewards: The Perfect Pair</template>
             <template v-slot:body>

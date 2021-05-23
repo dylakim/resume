@@ -5,6 +5,7 @@
       <a
         href="https://github.com/dylakim"
         class="github-banner"
+        title="View on GitHub"
         target="_blank"
       >
         <GitHubBanner />
@@ -16,10 +17,6 @@
       <Projects />
       <Clients />
     </main>
-
-    <footer>
-      <Social />
-    </footer>
   </div>
 </template>
 
@@ -28,7 +25,6 @@ import About from './components/About';
 import Clients from './components/Clients';
 import GitHubBanner from './components/svg/GitHubBanner';
 import Projects from './components/Projects';
-import Social from './components/Social';
 
 export default {
   name: 'App',
@@ -38,7 +34,6 @@ export default {
     Clients,
     GitHubBanner,
     Projects,
-    Social,
   }
 }
 </script>

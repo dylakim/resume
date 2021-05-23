@@ -1,10 +1,6 @@
 .social {
     display: flex;
-
-    @include bp(desktop) {
-        margin: auto;
-        width: calcRems(208px);
-    }
+    justify-content: center;
 
     #about & {
         a {
