@@ -3,7 +3,7 @@
     <header>
       <div class="logo">Kim Dyla</div>
       <a
-        href="https://github.com/dylakim"
+        href="https://github.com/dylakim/portfolio"
         class="github-banner"
         title="View on GitHub"
         target="_blank"
