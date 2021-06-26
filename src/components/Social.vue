@@ -54,3 +54,30 @@
         },
     }
 </script>
+
+<style lang="scss">
+.social {
+    display: flex;
+    justify-content: center;
+
+    #about & {
+        a {
+            display: block;
+            font-size: calcRems(36px);
+            margin-right: calcRems(35px);
+            padding: 0 calcRems(5px);
+            text-decoration: none;
+            
+            @include bp(desktop) {
+                font-size: calcRems(28px);
+                margin-right: calcRems(25px);
+            }
+    
+            &:last-of-type {
+                margin: 0;
+            }
+        }
+    }
+}
+
+</style>

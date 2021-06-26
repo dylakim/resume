@@ -5,33 +5,10 @@
 
         <div class="clients__logos">
             <Client
-                imageFileName="samsung.svg"
-                altText="Samsung"
-            />
-
-            <Client
-                imageFileName="mondelez.png"
-                altText="Mondelez International"
-            />
-            
-            <Client
-                imageFileName="sony.svg"
-                altText="Sony"
-            />
-            
-            <Client
-                imageFileName="dunkin.jpg"
-                altText="Dunkin'"
-            />
-            
-            <Client
-                imageFileName="chobani.svg"
-                altText="Chobani"
-            />
-
-            <Client
-                imageFileName="wyndham.png"
-                altText="Wyndham Hotels and Resorts"
+                v-for="client in clients"
+                :key="client.name"
+                :imageFileName="client.image"
+                :altText="client.name"
             />
         </div>
 
@@ -39,11 +16,49 @@
 </template>
 
 <script>
+    import clients from '../data/clients.json';
     import Client from './Client';
 
     export default {
         components: {
             Client,
         },
+
+        data () {
+            return {
+                clients,
+            };
+        },
     }
 </script>
+
+<style lang="scss">
+.clients {
+    padding: 0 calcRems(80px);
+    margin-bottom: calcRems(75px);
+
+    @include bp(desktop) {
+        margin: 0 auto calcRems(85px);
+        max-width: calcRems(920px);
+    }
+
+    p {
+        @include bp(desktop) {
+            padding: 0 calcRems(200px) 0;
+        }
+    }
+
+    &__logos {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: calcRems(20px) 0;
+        
+        @include bp(desktop) {
+            justify-content: space-around;
+            margin: calcRems(40px) 0;
+        }
+    }
+}
+</style>

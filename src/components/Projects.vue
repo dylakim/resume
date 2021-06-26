@@ -8,39 +8,59 @@
         </div>
 
         <Project
-            project-url="https://www.chobanirewards.com/"
-            imageFileName="chobani_rewards2021.jpg"
-            imageAlt="Chobani Rewards website screenshot"
-            projectName="Choabni Rewards"
+            v-for="project in projects"
+            :key="project.name"
+            :project-url="project.url"
+            :imageFileName="project.image"
+            :imageAlt="project.altText"
+            :projectName="project.name"
         >
-            <template v-slot:headline>Chobani Rewards</template>
+            <template v-slot:headline>{{ project.headline }}</template>
             <template v-slot:body>
-                <p>Project Description</p>
-                <p>Multiple paragraphs describing the project. Long line testing. Multiple paragraphs describing the project. Long line testing.</p>
-            </template>
-        </Project>
-
-        <Project
-            project-url="https://sonyrewards.promo.eprize.com/theperfectpair/"
-            imageFileName="sonyrewards_theperfectpair.jpg"
-            imageAlt="Sony Rewards: The Perfect Pair website screenshot"
-            projectName="The Perfect Pair"
-        >
-            <template v-slot:headline>Sony Rewards: The Perfect Pair</template>
-            <template v-slot:body>
-                <p>Project Description</p>
-                <p>Multiple paragraphs describing the project</p>
+                <div v-html="project.body" />
             </template>
         </Project>
     </section>
 </template>
 
 <script>
+    import projects from '../data/projects.json';
     import Project from './Project';
 
     export default {
         components: {
             Project,
         },
-    }
+
+        data () {
+            return {
+                projects,
+            };
+        },
+    };
 </script>
+
+<style lang="scss">
+#projects {
+    margin: 0 0 calcRems(75px);
+    
+    @include bp(desktop) {
+        margin: 0 auto calcRems(85px);
+        width: calcRems(920px);
+    }
+
+    .description {
+        background: $colorPurpleDk;
+        margin: 0 auto calcRems(40px);
+        padding: calcRems(45px) calcRems(80px);
+
+        @include bp(desktop) {
+            padding: calcRems(50px) calcRems(200px);
+        }
+
+        h1, p {
+            color: $colorWhite;
+        }
+    }
+}
+</style>
