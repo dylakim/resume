@@ -1,0 +1,18 @@
+[
+    {
+        "name": "Choabni Rewards",
+        "url": "https://www.chobanirewards.com/",
+        "image": "chobani_rewards2021.jpg",
+        "altText": "Chobani Rewards website screenshot",
+        "headline": "Chobani Rewards",
+        "body": "<p>Project Description</p><p>Multiple paragraphs describing the project. Long line testing. Multiple paragraphs describing the project. Long line testing.</p>"
+    },
+    {
+        "name": "The Perfect Pair",
+        "url": "https://sonyrewards.promo.eprize.com/theperfectpair/",
+        "image": "sonyrewards_theperfectpair.jpg",
+        "altText": "Sony Rewards: The Perfect Pair website screenshot",
+        "headline": "Sony Rewards: The Perfect Pair",
+        "body": "<p>Project Description</p><p>Multiple paragraphs describing the project</p>"
+    }
+]

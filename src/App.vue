@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <div class="logo">Kim Dyla</div>
+      <a
+        href="https://github.com/dylakim/portfolio"
+        class="github-banner"
+        title="View on GitHub"
+        target="_blank"
+      >
+        <GitHubBanner />
+      </a>
+    </header>
+
+    <main>
+      <About />
+      <Projects />
+      <Clients />
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import About from './components/About';
+import Clients from './components/Clients';
+import GitHubBanner from './components/svg/GitHubBanner';
+import Projects from './components/Projects';
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
+    About,
+    Clients,
+    GitHubBanner,
+    Projects,
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
